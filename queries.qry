@@ -1,0 +1,47 @@
+query SelectPatients {
+  description: "Select all patients"
+  statement: 
+    SELECT org.med.chain.Patient
+}
+
+query selectPatientById {
+  description: "Select the patient based on their id"
+  statement:
+      SELECT org.med.chain.Patient
+          WHERE (patientId ==_$atientId)
+}
+
+query selectDoctors {
+   description: "Select all doctors"
+  statement:
+      SELECT org.med.chain.Doctor
+} 
+
+query selectDoctorById {
+   description: "Select the doctor based on their id"
+  statement:
+      SELECT org.med.chain.Doctor
+          WHERE (doctorId ==_$doctorId)
+}
+
+query selectMedicalRecordByDoctorId {
+   description: "Select the medical records based on the DoctorId"
+  statement:
+      SELECT org.med.chain.MedicalRecord
+          WHERE ((authorized CONTAINS _$doctorId )OR (doctorId ==_$doctorId ))
+} 
+
+query selectMedicalRecordByPatientId {
+   description: "Select the medical records based on the PatientId"
+  statement:
+      SELECT org.med.chain.MedicalRecord
+          WHERE ((patientId ==_$patientId ))
+} 
+
+
+query selectMedicalRecordByDoctorAndPatientId {
+   description: "Select the medical records based on the DoctorId and PatientId"
+  statement:
+      SELECT org.med.chain.MedicalRecord
+          WHERE (((authorized CONTAINS _$DoctorId )OR (doctorId ==_$doctorId )) AND patientId == _$patientId)
+}
