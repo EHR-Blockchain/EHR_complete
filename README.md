@@ -1,6 +1,6 @@
 # EHR_complete
 
-As our application uses Block Chain it is not currently deployed and you have to follow development procedures to test the application as Depliying Block Chain based solution is not affordable to a student like us. 
+As our application uses Block Chain it is not currently deployed and you have to follow development procedures to test the application as Deploying Block Chain based solution is not affordable to a student like us. 
 
 Dependencies:
 Operating Systems: Ubuntu Linux 14.04 / 16.04 LTS (both 64-bit), or Mac OS 10.12
@@ -35,3 +35,5 @@ To run front_end(doctor dashboard):
 open another terminal and cd to front_end in EHR_complete and run npm run dev -- -p 3001
 
 Hence doctor dash board is up and running 
+
+![alt text](http://url/to/img.png)
