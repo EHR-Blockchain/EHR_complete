@@ -36,4 +36,6 @@ open another terminal and cd to front_end in EHR_complete and run npm run dev --
 
 Hence doctor dash board is up and running 
 
+
+# Overall workflow of the system
 ![alt text](https://github.com/EHR-Blockchain/EHR_complete/blob/master/SHERM.png)
