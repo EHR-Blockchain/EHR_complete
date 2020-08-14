@@ -1,0 +1,26 @@
+
+COMPOSER_CARD=restadmin@medical_chain
+COMPOSER_ADMIN=admin@medical_chain
+COMPOSER_NAMESPACES=never
+COMPOSER_AUTHENTICATION=true
+COMPOSER_MULTIUSER=true
+COMPOSER_PROVIDERS='{
+    "google": {
+        "provider": "google",
+        "module": "passport-google-oauth2",
+        "clientID": "931186038198-osch9gf61jdn20g3f4ec6npng3h1lbo9.apps.googleusercontent.com",
+        "clientSecret": "t9-n7IgkEoaWj1f20n9wiEc4",
+        "authPath": "/auth/google",
+        "callbackURL": "/auth/google/callback",
+        "scope": "https://www.googleapis.com/auth/plus.login",
+        "successRedirect": "http://segurodroga.ml:5000/signup",
+        "failureRedirect": "/"
+    }
+}'
+COMPOSER_DATASOURCES='{
+    "db": {
+        "name": "db",
+        "connector": "mongodb",
+        "host": "mongo"
+    }
+}'

@@ -3,7 +3,7 @@
     "composer": "^0.19.16"
   },
   "name": "medical_chain",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Medical Blockchain data",
   "scripts": {
     "prepublish": "mkdirp ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/medical_chain.bna",

@@ -15,6 +15,16 @@
 /**
  * Sample access control list.
  */
+
+rule Default {
+    description: "Allow all participants access to read all resources"
+    participant: "ANY"
+    operation: ALL
+    resource: "org.med.chain.*"
+    action: ALLOW
+}
+
+
 rule DoctorCanReadPatient {
 	description: "Allow doctor read access to all granted patients"
     participant(p): "org.med.chain.Doctor"

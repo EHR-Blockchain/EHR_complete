@@ -1,4 +1,3 @@
-
 /*
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,8 +40,8 @@ asset DoctorProfile identified by profileId{
     o Address address
 }   
 
-participant Patient identified by patientId {
-  o String patientId
+asset Patient identified by patientId {
+participant  o String patientId
   o String[] authorized
   o String gender
   o String age
