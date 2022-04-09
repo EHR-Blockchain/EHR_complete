@@ -19,7 +19,7 @@
     "@material-ui/icons": "^3.0.1",
     "i": "^0.3.6",
     "material-design-icons": "^3.0.1",
-    "moment": "^2.22.2",
+    "moment": "^2.29.2",
     "moment-timezone": "^0.5.23",
     "next": "^7.0.2",
     "npm": "^6.4.1",
